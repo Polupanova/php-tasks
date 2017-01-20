@@ -1,0 +1,23 @@
+Task A
+$a>$b;
+$a=$b;
+$b++;
+Rezult:30;
+--------------
+$a=$b;
+$a++;
+Rezult:31;
+
+Task C
+1.  The strpos(string,find,start) function finds the position of the first occurrence of a string inside another string.
+2.  This function may return Boolean / FALSE.
+3.& 4. PHP function strpos() has 3 arguments:
+$haystack (required) -- the string to search upon 
+$needle (required) -- the string you are looking for 
+$offset (optional) -- the offset to start from 
+5.  strings / int  (integer)
+
+<?php
+   $string = strpos("Hello, world!", "world");
+   echo($string); // 7
+?>
