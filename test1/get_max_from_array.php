@@ -2,11 +2,20 @@
 
 $title="Task - Get Max From Array/";
 
-$ar=array(25,1000,4,14,29,8,15);
+$arr = array(1, 20, 55, 8, 100, 951, 23);
+$n = 0;
+// show all array
 echo 'Array: ';
 for ($i = 0; $i <= 7; $i++)
   { 
-    echo $ar[$i]." "; 
+    echo $arr[$i]." "; 
   } ;
-  echo '<br>';
-echo '<b>'.$title.'  '.'Result:</b>'.'  '.max($ar); 
+  // check max from array
+foreach ($arr as $key=>$value) {
+    if ($value > $n) {
+        $n = $value;
+    }
+}
+//result
+ echo '<br>';
+echo '<b>'.$title.'  '.'Result:</b>'.'  '.$n; 

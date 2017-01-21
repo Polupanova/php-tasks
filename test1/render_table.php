@@ -16,7 +16,7 @@ $render_table .= "<table border='1' cellpadding='5' >";
 foreach($table as $key => $table_item){
 $render_table .= "<tr>";
 foreach($table_item as $value){
-    if ($table_item === $table[0]){
+    if ($table_item == $table[0]){
           $render_table.=('<th>' . $value . '</th>');
         }else{
 $render_table .= "<td>".$value."</td>";
@@ -26,4 +26,5 @@ $render_table .= "</tr>";
      }
 $render_table .= "</table>";
 echo $render_table;
+
 ?>
